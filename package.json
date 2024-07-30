@@ -1,0 +1,47 @@
+{
+  "name": "copy-dist-delete-jsmap-webpack-plugin",
+  "version": "1.0.1",
+  "description": "一个webpack插件，在构建完成时，复制dist到新目录，并删除dist里面js.map文件",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config rollup.config.js --watch",
+    "build": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktb1207/copy-dist-delete-jsmap-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-plugin",
+    "copy-output-plugin",
+    "sourcemap-webpack-plugin"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "ktb1207",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ktb1207/copy-dist-delete-jsmap-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/ktb1207/copy-dist-delete-jsmap-webpack-plugin/blob/main/README.md",
+  "peerDependencies": {
+    "webpack": "^5.91.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "rimraf": "5.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.18.0",
+    "rollup-plugin-cleaner": "^1.0.0"
+  }
+}
